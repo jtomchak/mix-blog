@@ -1,12 +1,17 @@
+import { BeakerIcon } from "@heroicons/react/solid";
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html>
-      <head></head>
+      <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+      </head>
+
       <body>{children}</body>
     </html>
-  )
+  );
 }
